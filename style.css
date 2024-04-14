@@ -1,0 +1,783 @@
+body{
+       margin: 0;
+       padding: 0;
+       font-family: cursive;
+}
+ /* menu */
+nav{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 0 100px;
+       color: #fff;
+       background: rgba(0,0,0,0.5);
+}
+ /* logo */
+.logo{
+       padding: 0 15px;
+       
+}
+.logo img{
+       width: 111px;
+       height: 72px;
+}
+.menu ul{
+       margin-bottom: 0;
+}
+
+.menu ul li{
+       display: inline-block;
+       margin: 0 27px;
+}
+.menu ul li a{
+       text-decoration: none;
+       cursor: pointer;
+       font-weight: bold;
+       font-size: 18px;
+       text-transform: uppercase;
+       /* font-family: montserrat; */
+       color: #fff;
+       padding: 9px 15px;
+}
+.menu ul li a:hover{
+       background: #015c92;
+       color: white;
+       transition: all 0.7s;
+}
+.menu ul li a:visited{
+       background: #015c92;
+       color: white;
+}
+
+.header{
+       background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(picture/1.jpg);
+       background-size: cover;
+       background-position: center center;
+       background-repeat: no-repeat;
+       height: 100vh;
+}
+ /* my image and text */
+.banner-text{
+       color: #fff;
+       position: absolute;
+       top: 39%;
+       transform: translate(-50%,-50%);
+       text-align: left;
+       width: 50%;
+       left: 50%;
+       padding: 0 27px 27px 27px;
+}
+/* .banner-text p{
+       font-size: 37px;
+       margin-left: 37%;
+       margin-top: 0;
+       padding-top: 0;
+       font-family: cursive;
+       color: #ffd700;
+} */
+.banner-text h1{
+       position: absolute;
+       font-size: 25px;
+       margin: 0;
+       margin-left: 33%;
+       top: 40%;
+       word-spacing: 5px;
+       font-family: cursive !important;
+}
+.banner-text img{
+       float: left;
+       width: 27%;
+       border-radius: 50%;
+       margin-left: 0; 
+       margin-top: 2%;      
+}
+.banner-text .Developer{
+       color:#3498db;
+           
+}
+.banner-text .Designer{
+       color: #99a3a4;
+}
+.banner-text .SEO{
+       color: #e74c3c;
+}
+
+  /* social media */
+
+.social-media{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       position: absolute;
+       top: 66%;
+       left: 20%;
+       /* background-color: #ffd700; */
+       width: 60%;
+       height: 17%;
+}
+.social-media .icon{
+       margin: 0 37px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       z-index: 2;
+       
+}
+.social-media span{
+       height: 60px;
+       width: 60px;
+       display: block;
+       background: #fff;
+       box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+       border-radius: 50%;
+       text-align: center;
+       cursor: pointer;
+       margin-top: 0;
+
+}
+.social-media span i{
+       font-size: 25px;
+       line-height: 60px;       
+}
+
+  
+#facebook-color{
+       color: #fff;
+       background: #3b5999;
+}
+#twitter-color{
+       color: #fff;
+       background: #46c1f6;
+}
+#instagram-color{
+       color: #fff;
+       background: #e1306c;
+}
+#github-color{
+       color: #fff;
+       background: #333;
+}
+#youtube-color{
+       color: #fff;
+       background: #de463b;
+}
+#telegram-color{
+       color: #fff;
+       background: #24a1de;
+}
+
+
+
+#facebook-color:hover{
+       transform: scale(1.3);
+       opacity: 0.7;
+}
+#twitter-color:hover{
+       transform: scale(1.3);
+       opacity: 0.8;
+}
+#instagram-color:hover{
+       transform: scale(1.3);
+       opacity: 0.8;
+}
+#github-color:hover{
+       transform: scale(1.3);
+       opacity: 0.8;
+}
+#youtube-color:hover{
+       transform: scale(1.3);
+       opacity: 0.8;
+}
+#telegram-color:hover{
+       transform: scale(1.3);
+       opacity: 0.8;
+}
+
+
+  /* about me  */
+
+.about{
+       width: 70%;
+       height: 60%;
+       background: rgba(0,0,0,0.7);
+       position: absolute;
+       left: 15%;
+       top: 20%;
+}
+.about p{
+       color: #fff;
+       font-size: 27px;
+       position: absolute;
+       left: 9%;
+       top: 6%;
+}
+  /* social media in contact page */
+
+#social-media{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       position: absolute;
+       /* flex-direction: column; */
+       top: 25%;
+       left: 15%;
+       /* background-color: #ffd700; */
+       width: 70%;
+       height: 50%;
+}
+#social-media .icon{
+       margin: 0 27px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       /* background-color: #24a1de; */
+       z-index: 2;
+}
+#social-media span{
+       height: 60px;
+       width: 60px;
+       display: block;
+       background: #fff;
+       box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+       border-radius: 50%;
+       text-align: center;
+       cursor: pointer;
+       margin-top: 0;
+
+}
+#social-media span i{
+       font-size: 25px;
+       line-height: 60px;
+       
+}
+
+#social-media #facebook-color{
+       color: #fff;
+       background: #3b5999;
+}
+#social-media #twitter-color{
+       color: #fff;
+       background: #46c1f6;
+}
+#social-media #instagram-color{
+       color: #fff;
+       background: #e1306c;
+}
+#social-media #github-color{
+       color: #fff;
+       background: #333;
+}
+#social-media #youtube-color{
+       color: #fff;
+       background: #de463b;
+}
+#social-media #telegram-color{
+       color: #fff;
+       background: #24a1de;
+}
+
+
+#social-media #facebook-color:hover{
+       transform: scale(1.3);
+       opacity: 0.7;
+}
+#social-media #twitter-color:hover{
+       transform: scale(1.3);
+       opacity: 0.8;
+}
+#social-media #instagram-color:hover{
+       transform: scale(1.3);
+       opacity: 0.8;
+}
+#social-media #github-color:hover{
+       transform: scale(1.3);
+       opacity: 0.8;
+}
+#social-media #youtube-color:hover{
+       transform: scale(1.3);
+       opacity: 0.8;
+}
+#social-media #telegram-color:hover{
+       transform: scale(1.3);
+       opacity: 0.8;
+}
+
+.brand{
+       position: absolute;
+       top: 20%;
+       left: 31%;
+       opacity: 0.9;
+       border: 1px solid #ffd700;
+       
+}
+ /* responsive */
+
+@media (max-width: 575.98px) { 
+
+         .header nav{
+                   padding-left: 0;
+                   padding-right: 0;
+                   
+         }
+
+         .social-media .icon{
+              margin-left: 14px;
+              margin-right: 14px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 15%;
+              height: 15%;
+         }
+         .social-media span{
+              height: 40px;
+              width: 40px;
+              display: block;
+              background: #fff;
+              box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+              border-radius: 50%;
+              text-align: center;
+              cursor: pointer;
+              margin-top: 0;
+       
+       }
+          .social-media span i{
+                font-size: 20px;
+                line-height: 40px;
+         }
+         .logo{
+              padding: 0;
+         }
+         .menu ul li{
+              margin: 0;
+              
+
+         }
+         .logo a img{
+              width: 33px;
+              height: 27px;
+         }
+         .menu ul{
+              padding: 0;
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+         }
+         .menu ul li a{
+              font-size: 5px;
+              padding: 5px 15px;
+              margin-top: 0;
+              display: flex;
+              align-items: center;
+         }
+         .banner-text{
+              width: 90%;
+              height: 30%;
+              padding: 0;
+         }
+         .banner-text img{
+              margin: 0;
+              width: 33%;
+              position: absolute;
+              top: 10%;
+              left:3%
+         }
+         .banner-text h1{
+              margin: 0;
+              position: absolute;
+              left: 41%;
+              top: 25%;
+              font-size: 90%;
+         }
+         .about{
+              width: 90%;
+              position: absolute;
+              left: 5%;
+              height: 47%;             
+         }
+         .about p{
+              font-size: 12px;
+              margin: 0;
+              position: absolute;
+              left: 5%;
+              top: 9%;
+         }
+         #social-media{
+              height: 22%;
+              position: absolute;
+              top: 33%;
+         }
+
+         #social-media .icon{
+              margin-left: 14px;
+              margin-right: 14px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 15%;
+              height: 15%;
+         }
+
+         #social-media span{
+              height: 40px;
+              width: 40px;
+              display: block;
+              background: #fff;
+              box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+              border-radius: 50%;
+              text-align: center;
+              cursor: pointer;
+              margin-top: 0;
+       
+         }
+          #social-media span i{
+                font-size: 20px;
+                line-height: 40px;
+         }
+         .brand-image img{
+              width: 200px;
+              position: absolute;
+              top: 25%;
+              left: 29px;
+              height: 160px;
+              opacity: 0.9;
+              border: 1px solid #ffd700;
+         }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+                .header nav{
+                    padding-left: 10%;
+                    padding-right: 10%;
+               }
+                .social-media{
+                     width: 80%;
+                     position: absolute;
+                     left: 10%;
+                }
+                .social-media span{
+                     width: 80px;
+                     height: 80px;
+                     display: block;
+                     background: #fff;
+                     box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+                     border-radius: 50%;
+                     text-align: center;
+                     cursor: pointer;
+                     margin-top: 0;
+                }
+                .social-media span i{
+                     font-size: 40px;
+                     line-height: 80px;
+                     
+              }
+                .social-media .icon{
+                    
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    
+              }
+                 .logo{
+                    padding: 0;
+              }
+
+                 .menu ul li{
+                    margin: 0;
+               }
+                 .logo a img{
+                     width: 72px;
+                     height: 57px;
+               }
+                 .menu ul{
+                     padding: 0;
+                     display: flex;
+                     justify-content: space-around;
+                     align-items: center;
+               }
+                 .menu ul li a{
+                     font-size: 15px;
+               }
+                 .banner-text{
+                     width: 90%;
+                     height: 30%;
+                     padding: 0;
+              }
+                .banner-text img{
+                     margin: 0;
+                     width: 27%;
+                     position: absolute;
+                     top: 10%;
+                     left: 9%;
+              }
+                .banner-text h1{
+                     margin: 0;
+                     position: absolute;
+                     left: 42%;
+                     font-size: 29px;
+                     top: 33%;
+              }
+                .about{
+                     width: 80%;
+                     position: absolute;
+                     left: 10%;
+                     height: 57%;             
+              }
+                .about p{
+                     font-size: 22px;
+                     margin: 0;
+                     position: absolute;
+                     left: 5%;
+                     top: 9%;
+              }
+                #social-media{
+                     height: 22%;
+                     position: absolute;
+                     top: 33%;
+              }
+                #social-media .icon{
+                     margin-left: 20px;
+                     margin-right: 20px;
+              }
+                .brand-image img{
+                     width: 40%;
+                     position: absolute;
+                     top: 25%;
+                     left: 30%;
+                     height: 40%;
+                     opacity: 0.9;
+              }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+       
+              .header nav{
+                  padding-left: 10%;
+                  padding-right: 10%;
+             }
+              .social-media{
+                   width: 80%;
+                   position: absolute;
+                   left: 10%;
+              }
+              .social-media span{
+                   width: 80px;
+                   height: 80px;
+                   display: block;
+                   background: #fff;
+                   box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+                   border-radius: 50%;
+                   text-align: center;
+                   cursor: pointer;
+                   margin-top: 0;
+              }
+              .social-media span i{
+                   font-size: 40px;
+                   line-height: 80px;
+                   
+            }
+              .social-media .icon{
+                  
+                  margin-left: 20px;
+                  margin-right: 20px;
+                  
+            }
+               .logo{
+                  padding: 0;
+            }
+
+               .menu ul li{
+                  margin: 0;
+             }
+               .logo a img{
+                   width: 72px;
+                   height: 57px;
+             }
+               .menu ul{
+                   padding: 0;
+                   display: flex;
+                   justify-content: space-around;
+                   align-items: center;
+             }
+               .menu ul li a{
+                   font-size: 15px;
+             }
+               .banner-text{
+                   width: 90%;
+                   height: 30%;
+                   padding: 0;
+            }
+              .banner-text img{
+                   margin: 0;
+                   width: 22%;
+                   position: absolute;
+                   top: 10%;
+                   left: 9%;
+            }
+              .banner-text h1{
+                   margin: 0;
+                   position: absolute;
+                   left: 40%;
+                   font-size: 29px;
+                   top: 37%;
+            }
+              .about{
+                   width: 76%;
+                   position: absolute;
+                   left: 12%;
+                   height: 60%;             
+            }
+              .about p{
+                   font-size: 25px;
+                   margin: 0;
+                   position: absolute;
+                   left: 5%;
+                   top: 9%;
+            }
+              #social-media{
+                   height: 22%;
+                   position: absolute;
+                   top: 33%;
+            }
+              #social-media .icon{
+                   margin-left: 20px;
+                   margin-right: 20px;
+            }
+              .brand-image img{
+                   width: 40%;
+                   position: absolute;
+                   top: 25%;
+                   left: 30%;
+                   height: 40%;
+                   opacity: 0.9;
+            }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+       
+              .header nav{
+                  padding-left: 10%;
+                  padding-right: 10%;
+             }
+              .social-media{
+                   width: 80%;
+                   position: absolute;
+                   left: 10%;
+              }
+              .social-media span{
+                   width: 80px;
+                   height: 80px;
+                   display: block;
+                   background: #fff;
+                   box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+                   border-radius: 50%;
+                   text-align: center;
+                   cursor: pointer;
+                   margin-top: 0;
+              }
+              .social-media span i{
+                   font-size: 40px;
+                   line-height: 80px;
+                   
+            }
+              .social-media .icon{
+                  
+                  margin-left: 20px;
+                  margin-right: 20px;
+                  
+            }
+               .logo{
+                  padding: 0;
+            }
+
+               .menu ul li{
+                  margin: 0;
+             }
+               .logo a img{
+                   width: 72px;
+                   height: 57px;
+             }
+               .menu ul{
+                   padding: 0;
+                   display: flex;
+                   justify-content: space-around;
+                   align-items: center;
+             }
+               .menu ul li a{
+                   font-size: 15px;
+             }
+               .banner-text{
+                   width: 90%;
+                   height: 30%;
+                   padding: 0;
+            }
+              .banner-text img{
+                   margin: 0;
+                   width: 20%;
+                   position: absolute;
+                   top: 10%;
+                   left: 13%;
+            }
+              .banner-text h1{
+                   margin: 0;
+                   position: absolute;
+                   left: 40%;
+                   font-size: 29px;
+                   top: 37%;
+            }
+              .about{
+                   width: 66%;
+                   position: absolute;
+                   left: 17%;
+                   height: 60%;             
+            }
+              .about p{
+                   font-size: 25px;
+                   margin: 0;
+                   position: absolute;
+                   left: 7%;
+                   top: 9%;
+            }
+              #social-media{
+                   height: 22%;
+                   position: absolute;
+                   top: 33%;
+            }
+              #social-media .icon{
+                   margin-left: 36px;
+                   margin-right: 36px;
+            }
+
+             #social-media span{
+              width: 80px;
+              height: 80px;
+              display: block;
+              background: #fff;
+              box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+              border-radius: 50%;
+              text-align: center;
+              cursor: pointer;
+              margin-top: 0;
+         }
+          #social-media span i{
+              font-size: 40px;
+              line-height: 80px;
+              
+       }
+              .brand-image img{
+                   width: 30%;
+                   position: absolute;
+                   top: 25%;
+                   left: 35%;
+                   height: 30%;
+                   opacity: 0.9;
+            }
+
+}
